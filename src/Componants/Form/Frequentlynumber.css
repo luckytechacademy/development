@@ -1,0 +1,147 @@
+.frequently_container{
+   background: #555;
+
+}
+
+.enquire {
+  background: linear-gradient(250deg, #a5aaae, #5b5c5c);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin-left: 140px;
+  transition: transform 0.3s ease;
+}
+
+.enquire:hover {
+  transform: translateY(-5px);
+}
+
+.enquire h3,h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.enquire h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.heading p{
+   font-size: 15px;
+  font-weight: 700;
+  color: antiquewhite;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.heading ul li{
+  color: white;
+  font-weight: 400;
+  margin-left: 100px;
+}
+.enquire{
+  margin-top: 15px;
+}
+
+.enquire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.enquire-form label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.enquire-form input,
+.enquire-form textarea {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.enquire-form input:focus,
+.enquire-form textarea:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.submit-btn {
+  background: #fff;
+  color: #0078ff;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #0078ff;
+  color: white;
+  transform: scale(1.05);
+  
+}
+.certificate_number {
+  /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.number-box {
+  padding: 20px 10px;
+  transition: all 0.4s ease;
+}
+
+.number-box h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffdd57;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.number-box .divider {
+  width: 60px;
+  height: 3px;
+  
+  background-color: #ffdd57;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.number-box p {
+  font-size: 1rem;
+  
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.number-box:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .number-box h3 {
+    font-size: 2rem;
+  }
+  .number-box p {
+    font-size: 0.9rem;
+  }
+}

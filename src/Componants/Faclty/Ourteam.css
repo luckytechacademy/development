@@ -1,0 +1,81 @@
+
+.col h3{
+ font-size: 2.2rem;
+  font-weight: 700;
+  font-family: "Poppins", "Source Sans Pro", "Arial", sans-serif;
+  color: #7a7878;
+  /* text-transform: uppercase; */
+}
+.container_faculty {
+   display: flex;          /* ya grid */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;             
+    margin: 40px auto;
+    padding: 20px; /* andar space */
+    background: #f9f9f9;             /* halka background */
+    border-radius: 15px;             /* rounded edges */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);  /* soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.container_faculty:hover {
+    transform: translateY(-5px);     /* thoda upar lift hoga */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* aur shadow ghera */
+}
+
+.circle-card {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  margin: 50px;
+  border-radius: 10%;    /* circle shape */
+
+}
+
+.circle-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* image circle me fit */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.circle-card:hover img {
+  transform: scale(1.1);   /* zoom effect */
+}
+
+/* Wrapper for text */
+.circle-info {
+  position: absolute;
+  bottom: -100%;           /* hidden initially */
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-family: Poppins, sans-serif;
+  transition: bottom 0.3s ease;
+  /* border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */
+}
+
+.circle-card:hover .circle-info {
+  bottom: 0;               /* hover pe slide hoke aayega */
+}
+
+.circle-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.circle-subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+  opacity: 0.8;
+}

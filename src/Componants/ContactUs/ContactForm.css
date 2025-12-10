@@ -1,0 +1,38 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  color: #fff;
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #6610f2, #007bff);
+  transform: scale(1.05);
+}
+
+.form-control,
+.input-group-text {
+  border-radius: 10px !important;
+}
+
+input,
+textarea {
+  font-size: 0.9rem !important;
+  padding: 6px 10px !important;
+}

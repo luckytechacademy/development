@@ -1,0 +1,122 @@
+.slider-section {
+  width: 100%;
+  overflow: hidden;
+}
+img{
+    height: 500px;
+}
+/* Smooth slide transition */
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+/* Slide from Right */
+.slide-right.carousel-item-next.carousel-item-start,
+.slide-right.carousel-item-prev.carousel-item-end {
+  transform: translateX(0);
+}
+
+.slide-right.carousel-item-next,
+.slide-right.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.slide-right.carousel-item-prev,
+.slide-right.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+/* Slide from Left */
+.slide-left.carousel-item-next.carousel-item-start,
+.slide-left.carousel-item-prev.carousel-item-end {
+  transform: translateX(0);
+}
+
+.slide-left.carousel-item-next,
+.slide-left.active.carousel-item-end {
+  transform: translateX(-100%);
+}
+
+.slide-left.carousel-item-prev,
+.slide-left.active.carousel-item-start {
+  transform: translateX(100%);
+}
+
+/* Slide from Top */
+.slide-top.carousel-item-next.carousel-item-start,
+.slide-top.carousel-item-prev.carousel-item-end {
+  transform: translateY(0);
+}
+
+.slide-top.carousel-item-next,
+.slide-top.active.carousel-item-end {
+  transform: translateY(-100%);
+}
+
+.slide-top.carousel-item-prev,
+.slide-top.active.carousel-item-start {
+  transform: translateY(100%);
+}
+
+/* Slide from Bottom */
+.slide-bottom.carousel-item-next.carousel-item-start,
+.slide-bottom.carousel-item-prev.carousel-item-end {
+  transform: translateY(0);
+}
+
+.slide-bottom.carousel-item-next,
+.slide-bottom.active.carousel-item-end {
+  transform: translateY(100%);
+}
+
+.slide-bottom.carousel-item-prev,
+.slide-bottom.active.carousel-item-start {
+  transform: translateY(-100%);
+}
+.social_media{
+    position: absolute;
+    top:30%;
+    right:20px;
+    z-index: 10;
+    border: 2px solid black;
+    height: 200px;
+    width: 50px;
+   border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    opacity: 0.7;
+}
+.social_media div{
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 7px 0;
+     
+}
+.social_media div i {
+  font-size: 25px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+/* Hover effect — slide from top */
+.social_media div i:hover {
+  animation: slide-in-top 0.8s ease forwards;
+}
+
+/* Keyframes for slide-in-top */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+      
